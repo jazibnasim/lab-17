@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jazib Nasim</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<!-- Toggle menu based on size-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav") {
+        x.className += " change";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+	</head>
+
+		<body ng-app="jazibApp">
+
+			<ul class="nav" id="myTopnav">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="portfolio.html">Portfolio</a></li>
+			  <li><a href="resume.html">Resume</a></li>
+			  <li class="icon">
+    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;<!--Unicode for hamburger icon--></a>
+			  </li>
+			</ul>
+
+						<h1> Portfolio </h1>
+						<!-- Grid Box -->
+						<div class="box">
+
+								<!-- Grid Items -->
+<section id="grid" ng-controller="projectInfoCtrl">
+
+								<project ng-repeat="project in projectInfo">
+								</project>
+
+							</section>
+
+
+
+								  <div class="cell">
+								  	<h2> Project 1 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="images/firstproject.png"; id="first">
+										</a>
+											<p> This was the first website I created following a predetermined set of rules </p>
+
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 2</h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 3 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 4 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 5 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 6 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 2 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 8 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+								</a>
+								  </div>
+								  <div class="cell">
+								  	<h2> Project 9 </h2>
+
+										<a href="https://github.com/jazam2010/The-Beginning">
+											<img src="http://placekitten.com/400/200"; id="first">
+										</a>
+							  </div>
+						</div>
+
+
+						<script src="lib/angular.min.js"></script>
+            <script src="lib/angular-route.min.js"></script>
+            <script src="app.js"></script>
+
+			</body>
+
+
+</html>
